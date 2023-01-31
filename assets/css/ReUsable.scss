@@ -1,0 +1,66 @@
+// repeatable calsses that are uses most of the times
+.pointer{
+  cursor: pointer;
+}
+h1{
+  font-weight: 700;
+  font-size: clamp(40px,2vw,48px);
+}
+.rotate90{
+  transform: rotate(90deg);
+}
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 8px;
+  border-radius: 12px;
+}
+.r-6{
+  border-radius: 6px;
+}
+.r-12{
+  border-radius: 12px;
+}
+.r-16{
+  border-radius: 16px;
+}
+.r-20{
+  border-radius: 20px;
+}
+.border{
+  border-color: rgb(131, 120, 120) !important;
+}
+.ltr{
+  direction: ltr !important;
+}
+.rtl{
+  direction: rtl !important;
+}
+.shadowbox{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border: 1px solid #e7e7e7;
+}
+.btnLink{
+  color: #fff;
+  background-color: #729bf3 !important;
+  border: 1px solid #729bf3 !important;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred {
+  text-align: right !important;
+  height: 278px !important;
+  padding-top: 19px !important;
+  padding-right: 17px !important;
+}
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred h1{
+  display: none !important;
+}
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{
+  text-align: right !important;
+  height: 278px !important;
+  padding-top: 19px !important;
+  padding-right: 17px !important;
+}
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused h1{
+  display: none !important;
+}
