@@ -1,4 +1,4 @@
-# panel
+# chat
 
 ## Build Setup
 
