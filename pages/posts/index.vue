@@ -1,9 +1,21 @@
 <template>
-  <div class="d-flex">
-    asd
-    <div v-for="(item, i) in postData" :key="i" class="d-flex flex-column">
-      {{ item.title }}
-    </div>
+  <div class="d-flex flex-column">
+    <b-table
+      id="my-table"
+      class="table-hover pointer bg-white"
+      :items="postData"
+      :per-page="perPage"
+      :current-page="currentPage"
+      larg
+    ></b-table>
+    <b-pagination
+      v-model="currentPage"
+      class="d-flex align-items-center"
+      :total-rows="rows"
+      :per-page="perPage"
+      aria-controls="my-table"
+      pills>
+    </b-pagination>
   </div>
 </template>
 
@@ -11,8 +23,14 @@
 export default {
   name: "Index",
   layout: 'PanelAdmin',
+  async fetch() {
+    this.postData = await fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((res) => res.json())
+  },
   data () {
     return {
+      perPage: 10,
+      currentPage: 1,
       postData: []
     }
   },
@@ -21,7 +39,7 @@ export default {
   created() {
     },
   mounted() {
-    this.$store.dispatch('getPost')
+   console.log(this.postData)
   },
   methods: {
   }

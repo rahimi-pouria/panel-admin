@@ -1,4 +1,3 @@
-import axios from "axios"
 import Users from "../Plugins/Users";
 import Media from "../Plugins/Media"
 import Order from "../Plugins/Order"
@@ -12,19 +11,8 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setPosts(state, posts) {
-    state.posts = posts
-  }
 }
 export const getters = {
-  getpostData : state => state.posts
 }
 export const actions = {
-  getPost ({commit}){
-    return axios.get('https://jsonplaceholder.typicode.com/posts')
-      .then((response) => {
-        const posts = response.data
-        commit('setPosts', posts)
-      })
-  }
 }
