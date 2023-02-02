@@ -3,14 +3,24 @@
     <div class="d-flex align-items-center justify-content-center p-5 w-100">
       <h2 class="f18-700">لیست پست ها</h2>
     </div>
-    <b-table
-      id="my-table"
-      class="table-hover pointer bg-white"
-      :items="postData"
-      :per-page="perPage"
-      :current-page="currentPage"
-      larg
-    ></b-table>
+      <div class="d-flex flex-column g18">
+        <div
+              v-for="(item, i) in postData"
+             :key="i"
+             class="d-flex w-100 g12 bg-white shadowbox p-3 r-6"
+
+        >
+          <div class="d-flex flex-column g16" style="width: 70%">
+            <h2 class="f18-700">{{ item.title }}</h2>
+            <nuxt-link :to="item.path">{{ item.continent}}</nuxt-link>
+            <p class="f14-400">{{ item.description }}</p>
+          </div>
+          <hr>
+          <div class="d-flex w-25">
+            <img :src="item.image" class="w-100" alt="">
+          </div>
+        </div>
+      </div>
     <b-pagination
       v-model="currentPage"
       class="d-flex align-items-center"
@@ -33,7 +43,7 @@ export default {
     }
   },
   async fetch() {
-    this.postData = await fetch('https://jsonplaceholder.typicode.com/posts')
+    this.postData = await fetch('https://api.nuxtjs.dev/mountains')
     .then((res) => res.json())
   },
   computed: {
