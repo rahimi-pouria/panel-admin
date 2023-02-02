@@ -1,5 +1,8 @@
 <template>
   <div class="d-flex flex-column">
+    <div class="d-flex align-items-center justify-content-center p-5 w-100">
+      <h2 class="f18-700">لیست پست ها</h2>
+    </div>
     <b-table
       id="my-table"
       class="table-hover pointer bg-white"
