@@ -27,7 +27,7 @@ body{
   overflow-x: hidden !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background: #e6ecfe;
+  background: #f5f9fa;
   direction: rtl;
 }
 a{
@@ -40,6 +40,23 @@ a{
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #729bf3 !important;
+}
+.table th, .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.table-hover tbody tr:hover {
+  background-color: #007bff !important;
+  color: #ffffff !important;
+}
+.card{
+  width: 100%;
+  display: flex;
+  text-align: right !important;
+  gap: 30px;
+  border: 0 !important;
+  align-items: center;
 }
 //responsive
 @media only screen and (max-width:600px){

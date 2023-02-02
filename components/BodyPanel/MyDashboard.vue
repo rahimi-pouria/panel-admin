@@ -14,8 +14,7 @@
           سفارش پروژه جدید
         </p>
       </NuxtLink>
-      <div class="col-md-3 d-flex bg-white align-items-center justify-content-between"
-           style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+      <div class="col-md-3 d-flex bg-white align-items-center justify-content-between">
         <div class="d-flex flex-column g4">
           <p class="f18-700 text-right">42</p>
           <p class="f14-400 text-right" style="color: #a1aab5">سفارش ثبت شده</p>
@@ -24,9 +23,7 @@
           <img src="@/assets/img/payment2.png" class="" style="width: 16px" alt="">
         </span>
       </div>
-      <div class="col-md-3 d-flex bg-white align-items-center justify-content-between"
-           style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"
-      >
+      <div class="col-md-3 d-flex bg-white align-items-center justify-content-between">
         <div class="d-flex flex-column g4">
           <p class="f18-700 text-right">23</p>
           <p class="f14-400 text-right" style="color: #a1aab5">تیکت ارسالی</p>
@@ -35,9 +32,7 @@
           <BIconChat />
         </span>
       </div>
-      <div class="col-md-3 d-flex bg-white align-items-center justify-content-between"
-           style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"
-      >
+      <div class="col-md-3 d-flex bg-white align-items-center justify-content-between">
         <div class="d-flex flex-column g4">
           <p class="f18-700 text-right">10</p>
           <p class="f14-400 text-right" style="color: #a1aab5">پرداخت کامل شده</p>
