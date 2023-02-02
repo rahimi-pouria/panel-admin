@@ -11,7 +11,6 @@
     <b-pagination
       v-model="currentPage"
       class="d-flex align-items-center"
-      :total-rows="rows"
       :per-page="perPage"
       aria-controls="my-table"
       pills>
@@ -23,16 +22,16 @@
 export default {
   name: "Index",
   layout: 'PanelAdmin',
-  async fetch() {
-    this.postData = await fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((res) => res.json())
-  },
   data () {
     return {
       perPage: 10,
       currentPage: 1,
       postData: []
     }
+  },
+  async fetch() {
+    this.postData = await fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((res) => res.json())
   },
   computed: {
   },
