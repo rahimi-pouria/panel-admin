@@ -42,6 +42,7 @@ export default {
       postData: []
     }
   },
+  // get data with api
   async fetch() {
     this.postData = await fetch('https://api.nuxtjs.dev/mountains')
     .then((res) => res.json())
